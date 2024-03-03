@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.dropdown{
+    display:flex;
+    width:100%;
+    min-height: 66px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.dropdown ul{
+    display:flex;
+   list-style: none;
+   
+}
+
+.dropdown ul li{
+    
+    padding: 0 20px;
+    position:relative;
+    
+}
+.dropdown ul li a{
+    text-decoration: none;
+    
+}
+.products ul {
+    display:block;
+    position:absolute;
+    left:0;
+    top:100%;
+    background-color: lightblue;
+    display: none;;
+}
+
+
+
+ .dropdown ul li:hover .products ul  {
+    display:block;
+    
+} 
+
+@media (max-width: 768px){
+
+    .dropdown{
+        display:block;
+        text-align: center;
+       
+        
+    }
+
+    .dropdown ul{
+        display:block;
+       
+       
+    }
+    .dropdown ul li{
+    
+      padding:0 20px;
+      
+       
+        
+    }
+    .products ul {
+        display:block;
+        position:relative;
+        left:0;
+        top:100%;
+        background-color:lightcoral;
+        display: none;;
+    }
+    
+    
+    
+     .dropdown ul li:hover .products ul  {
+        display:block;
+        
+    }
+}
